@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yoga Prabhu | Portfolio</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Starfield canvas (background) -->
+  <canvas id="stars"></canvas>
+
+  <!-- page content sits above canvas -->
+  <div id="page">
+
+    <!-- NAV (fixed) -->
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#volunteering">Volunteering</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO / ABOUT -->
+    <header id="about" class="hero fade-in" role="banner">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <img src="pics/Profile.png" alt="Profile photo of Yogaprabhu" class="profile-pic fade-in-elem">
+        </div>
+
+        <div class="hero-right">
+          <h1 class="fade-in-elem">Yogaprabhu Ramesh Kanna</h1>
+          <p class="tagline fade-in-elem">Graduate Student • Robotics • Data Science • AI/ML • Technical Consulting</p>
+
+          <p class="summary fade-in-elem">
+            Mechatronics Engineer & Management Graduate passionate about AI/ML, robotics, and sustainable innovation.
+            On a mission to fuse AI, management, and innovation into solutions that feel like tomorrow.
+            <br>Seeking opportunities in Data Science, AI/ML or technical consulting.
+              <br>
+           <h5 class="dot"><a href="mailto:yoga.prabhu@email.com"><img src="pics/email.png" width="40" height="40" ></a> •  
+           <a href="https://linkedin.com/in/yogaprabhu" target="_blank"><img src="pics/linkedin.png" width="40" height="40" ></a> •
+           <a href="https://github.com/SyberSage"><img src="pics/github.png" width="40" height="40" ></a> </h1>
+          </p>
+
+          <div class="hero-ctas fade-in-elem">
+            <a class="btn" href="Yogaprabhu_Resume.pdf" download>Download Resume</a>
+            <a class="btn ghost" href="#contact">Get in Touch</a>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+  <h2 class="section-title">Education</h2>
+
+  <!-- Master's -->
+  <div class="edu-card fade-in-elem">
+    <div class="edu-header">
+      <h3>Masters of Science in General Management</h3>
+      <span class="edu-date"> Apr 2023 – Aug 2025<br>Göttingen, Germany</span>
+    </div>
+    <p class="edu-school"><b>PFH Private Hochschule Göttingen</b></p>
+    <ul>
+      <li>Relevant coursework: Strategic Management, Digital Business Models, Risk Management in Global Supply Chains.</li>
+      <li>Active participation in case studies, business simulations, and cross-cultural team projects.</li>
+      <li><b>Master's Thesis</b>: <br><em>Enabling a Sustainable Circular Economy through Industry 4.0 : Innovations, Challenges, and Future Prospects.</em></li>
+      <li>Project works:
+        <ol class="roman">
+         <li>Study of supply chain risk management in Toyota, Apple, and Unilever.</li>
+        <li>Study of the Evolution of Marketing.</li>
+        <li>Diversity in Human Resource Management.</li>
+      </ol>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Bachelor's -->
+  <div class="edu-card fade-in-elem">
+    <div class="edu-header">
+      <h3>Bachelor of Technology in Mechatronics Engineering with specialization in Robotics</h3>
+      <span class="edu-date">Jun 2018 – May 2022<br>Chennai, India</span>
+    </div>
+    <p class="edu-school"><b>SRM Institute of Science and Technology</b></p>
+    <ul>
+      <li>Relevant coursework: Robotics & Mechatronics, Embedded Systems, Control Systems, Machine Design, Power Electronics.</li>
+      <li>Final-year project: <em>Design and Fabrication of Smart Helmet Designing</em> – focused on rider safety and embedded electronics.</li>
+      <li>Strong foundation in mechanical design and programming for automation systems.</li>
+    </ul>
+  </div>
+</section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-grid">
+        <article class="project card fade-in-elem">
+          <div class="proj-thumb-wrap">
+            <img src="pics/helmet/IMG_20220430_014720.jpg" alt="Smart Helmet" class="proj-img">
+          </div>
+          <h4>Smart Helmet</h4>
+          <li>Developed a safety helmet integrated with embedded electronics for accident detection and rider protection.</li>
+          <li>Utilized Arduino, sensors, and wireless communication to trigger emergency alerts.</li>
+          <li>Improved safety response time by enabling automatic crash notification within seconds.</li>
+        </article>
+
+        <article class="project card fade-in-elem">
+          <div class="proj-thumb-wrap">
+            <img src="pics/cnc.jpg" alt="CNC Plotter" class="proj-img">
+          </div>
+          <h4>CNC Plotter</h4>
+          <li>Designed and programmed a low-cost computer numerical control (CNC) plotter using stepper motors and Arduino.</li>
+          <li>Achieved high precision in plotting by implementing G-code interpretation and motion control algorithms.</li>
+          <li>Applied mechanical design principles and microcontroller programming for automation.</li>
+        </article>
+
+        <article class="project card fade-in-elem">
+          <div class="proj-thumb-wrap">
+            <img src="pics/drone.png" alt="Quadcopter" class="proj-img">
+          </div>
+          <h4>Quadcopter</h4>
+          <li>Built a quadcopter prototype with stability control systems for autonomous flight.</li>
+          <li>Applied PID control, motor calibration, and wireless communication modules.</li>
+          <li>Strengthened expertise in aerodynamics, system dynamics, and embedded systems.</li>
+        </article>
+
+        <article class="project card fade-in-elem">
+            <a href="https://sybersage.github.io/Coffee/" target="_blank" class="proj-link">
+              <div class="proj-thumb-wrap">
+                <img src="pics/coffee.png" alt="Coffee Website" class="proj-img">
+              </div>
+              <h4>Coffee Website</h4>
+              <p>Responsive mock coffee shop website built with HTML, CSS & JS. Click to visit live site.</p>
+            </a>
+          </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card card fade-in-elem">
+          <h4>Technical Skills</h4>
+          <ul class="skill-list">
+            <li>Electrical Machines & Actuators</li>
+            <li>Embedded Systems & Microcontrollers</li>
+            <li>Machine Design & Kinematics</li>
+            <li>Power Electronics & Drives</li>
+            <li>Robotics & Mechatronics</li>
+            <li>System Dynamics & Control Systems</li>
+          </ul>
+        </div>
+
+        <div class="skill-card card fade-in-elem">
+          <h4>Programming Languages</h4>
+          <ul class="skill-list">
+            <li>C / C++</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-card card fade-in-elem">
+          <h4>Software & Tools</h4>
+          <ul class="skill-list">
+            <li>AutoCAD</li>
+            <li>SolidWorks</li>
+            <li>MATLAB / Simulink</li>
+            <li>SAP ERP (basics)</li>
+          </ul>
+        </div>
+
+        <div class="skill-card card fade-in-elem">
+          <h4>Soft Skills</h4>
+          <ul class="skill-list">
+            <li>Problem Solving & Critical Thinking</li>
+            <li>Project Planning & Execution</li>
+            <li>Team Collaboration</li>
+            <li>Technical Documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="section">
+  <h2 class="section-title">Courses</h2>
+
+  <div class="course-card fade-in-elem">
+    <div class="course-header">
+      <h3>Data Science Program with IIT-M Pravartak Certification</h3>
+      <span class="course-date">Aug 2025 – Dec 2025</span>
+    </div>
+    <p class="course-provider">HCL GUVI</p>
+  </div>
+
+  <div class="course-card fade-in-elem">
+    <div class="course-header">
+      <h3>Robotics and Control: Theory & Practice</h3>
+      <span class="course-date">Jan 2021 – Mar 2021</span>
+    </div>
+    <p class="course-provider">NPTEL Repository</p>
+  </div>
+
+  <div class="course-card fade-in-elem">
+    <div class="course-header">
+      <h3>Introduction to Virtual Reality</h3>
+      <span class="course-date">Jan 2021</span>
+    </div>
+    <p class="course-provider">University of London – Coursera</p>
+  </div>
+</section>
+
+
+    <!-- VOLUNTEERING -->
+    <section id="volunteering" class="section">
+  <h2 class="section-title">Volunteering & Leadership</h2>
+
+  <div class="volunteering-card fade-in-elem">
+    <div class="volunteering-header">
+      <h3>Erasmus Student Network (ESN)</h3>
+      <span class="volunteering-date">Nov 2023 – Oct 2024<br>Göttingen, Germany</span>
+    </div>
+    <p><em>Student Buddy & Event Coordinator</em></p>
+    <ul>
+            <li>Supported the incoming international students by providing guidance and resources.</li>
+            <li>Coordinated cultural and social events for the student community.</li>
+            <li>Collaborated with a team of volunteers to plan and execute successful monthly activities and meetups.</li>
+            <li>Developed strong communication and leadership skills through regular interaction with diverse student groups.</li>
+        </ul>
+      </div>
+
+       <div class="volunteering-card fade-in-elem">
+    <div class="volunteering-header">
+      <h3>DSA - Directorate of Student Affairs</h3>
+      <span class="volunteering-date">Jul 2018 – Mar 2020<br>SRM Institute of Science and Technology</span>
+    </div>
+    <p><em>Member</em></p>
+        <ul>
+            <li>Organize and manage various campus-wide cultural and sports events, including fests and inter-departmental competitions.</li>
+            <li>Gained hands-on experience in event planning, logistics, and student engagement.</li>
+        </ul>
+      </div>  
+
+      <div class="volunteering-card fade-in-elem">
+    <div class="volunteering-header">
+      <h3>NSS - National Service Scheme</h3>
+      <span class="volunteering-date">Jun 2018 – May 2019<br>SRM Institute of Science and Technology</span>
+    </div>
+    <p><em>Volunteer</em></p>
+        <ul>
+            <li>Participated in community outreach, social awareness programs, and environmental initiatives.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section id="languages" class="section">
+      <h2 class="section-title">Languages</h2>
+
+      <div class="lang-levels">
+        <div class="lang-row fade-in-elem" data-level="4">
+          <span class="lang-name">English</span>
+          <div class="bars" aria-hidden="true">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+        </div>
+
+        <div class="lang-row fade-in-elem" data-level="5">
+          <span class="lang-name">Tamil</span>
+          <div class="bars">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+        </div>
+
+        <div class="lang-row fade-in-elem" data-level="3">
+          <span class="lang-name">Hindi</span>
+          <div class="bars">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+        </div>
+
+        <div class="lang-row fade-in-elem" data-level="2">
+          <span class="lang-name">German</span>
+          <div class="bars">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Get in Touch</h2>
+
+      <div class="contact-grid">
+        <!-- left: contact details -->
+        <div class="contact-details card fade-in-elem">
+          <p><strong>Email : </strong> <a href="mailto:yogs1603@gmail.com">yogs1603@gmail.com</a></p>
+          <p><strong>Phone : </strong> +91 72995 63555</p>
+          <p><strong>LinkedIn : </strong> <a href="https://linkedin.com/in/yoga-prabhu" target="_blank">linkedin.com/in/yoga-prabhu</a></p>
+          <p><strong>GitHub : </strong> <a href="https://github.com/SyberSage" target="_blank">github.com/SyberSage</a></p>
+        </div>
+
+        <!-- right: contact form -->
+        <div class="contact-form-wrap card fade-in-elem">
+          <!-- replace action with your Formspree or server endpoint -->
+          <form class="contact-form" action="https://formspree.io/f/mkgvlozj" method="POST">
+            <input name="name" type="text" placeholder="Your name" required>
+            <input name="_replyto" type="email" placeholder="Your email" required>
+            <textarea name="message" rows="6" placeholder="Your message..." required></textarea>
+            <div class="form-ctas">
+              <button type="submit" class="btn">Send Message</button>
+              <a class="btn ghost" href="Yogaprabhu_Resume.pdf" download>Download Resume</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Yogaprabhu Ramesh Kanna</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
