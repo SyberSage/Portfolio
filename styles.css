@@ -23,7 +23,20 @@ h1{color:#30f1ff;margin:0 0 8px 0;font-size:2.0rem}
 .tagline{color:#9ee7ff;margin-bottom:12px}
 .summary{color:#cfefff;margin-bottom:14px}
 
-.dot {color: #000;}
+.dot {
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  transition: transform .25s ease, filter .25s ease;
+}
+.dot:hover {
+  transform: translateY(-6px);
+  filter: drop-shadow(0 14px 30px rgba(0,220,255,0.18));
+}
+.dot img { transition: transform .2s ease; }
+.dot a:hover img { transform: scale(1.12); }
 
 /* CTA buttons */
 .btn{display:inline-block;padding:10px 16px;border-radius:8px;background:linear-gradient(90deg,#00f0ff,#0066ff);color:#001;font-weight:700;text-decoration:none;box-shadow:0 6px 20px rgba(0,240,255,0.06);transition:transform .15s}
