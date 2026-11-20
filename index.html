@@ -48,9 +48,9 @@
             <br>Open to opportunities spanning Robotics Research, AI/ML, and Data Science.
           </p>
           <div class="dot fade-in-elem">
-            <a href="mailto:yogs1603@gmail.com"><img src="pics/email.png" width="45" height="45" ></a> •
-            <a href="https://linkedin.com/in/yoga-prabhu" target="_blank"><img src="pics/linkedin.png" width="45" height="45" ></a> •
-            <a href="https://github.com/SyberSage" target="_blank"><img src="pics/github.png" width="45" height="45" ></a>
+            <a href="mailto:yogs1603@gmail.com"><img src="pics/email.png" width="40" height="40" ></a> •
+            <a href="https://linkedin.com/in/yoga-prabhu" target="_blank"><img src="pics/linkedin.png" width="40" height="40" ></a> •
+            <a href="https://github.com/SyberSage" target="_blank"><img src="pics/github.png" width="40" height="40" ></a>
           </div>
 
           <div class="hero-ctas fade-in-elem">
@@ -110,6 +110,68 @@
       <div class="project-grid">
         <article class="project card fade-in-elem">
           <div class="proj-thumb-wrap">
+            <img src="pics/police.png" alt="Police Traffic Stop Analytics" class="proj-img">
+          </div>
+          <h4>Police Traffic Stop Analytics (SecureCheck)</h4>
+          <li>Streamlit dashboard on a MySQL traffic-stop database: every KPI, chart and table is driven by live SQL queries, with interactive Plotly charts and a vehicle look-up.</li>
+          <li>Wrote 20 SQL queries (aggregations, window functions, CTEs, joins) on an indexed schema — top vehicles in DUI stops, arrest rate by age group, high-risk violation patterns.</li>
+          <li><a href="https://police-checkpost-logs-sybersage.streamlit.app/" target="_blank">🔗 Live App</a> · <a href="https://github.com/SyberSage/police_checkpost_logs" target="_blank">GitHub</a></li>
+        </article>
+
+        <article class="project card fade-in-elem">
+          <div class="proj-thumb-wrap">
+            <img src="pics/agriculture.png" alt="Indian Agriculture Analysis (AgriData Explorer)" class="proj-img">
+          </div>
+          <h4>Indian Agriculture Analysis (AgriData Explorer)</h4>
+          <li>Analysed 16,146 district-level ICRISAT records (20 states, 311 districts, 1966–2017) on crop area, production and yield: Python cleaning, 15 EDA analyses and 10 business questions answered in MySQL.</li>
+          <li>Interactive Power BI report plus a Streamlit dashboard with year-range and state filters; yield is computed as total production ÷ total area, not as an average of yields.</li>
+          <li><a href="https://indian-agriculture-anlaysis-sybersage.streamlit.app/" target="_blank">🔗 Live App</a> · <a href="https://github.com/SyberSage/Indian-Agriculture-Anlaysis" target="_blank">GitHub</a></li>
+        </article>
+
+        <article class="project card fade-in-elem">
+          <div class="proj-thumb-wrap">
+            <img src="pics/attrition.png" alt="Employee Attrition Prediction" class="proj-img">
+          </div>
+          <h4>Employee Attrition Prediction</h4>
+          <li>Compared four classifiers on the IBM HR dataset (1,470 employees, ~16% attrition); selected Logistic Regression (AUC 0.82, recall 0.72) because high-accuracy models missed most leavers (Random Forest: 85% accuracy, 8.5% recall).</li>
+          <li>Feature engineering, preprocessing and model packaged in one scikit-learn pipeline behind a Streamlit app that scores attrition risk from 29 employee inputs.</li>
+          <li>Identified and removed a data-leakage feature that was inflating a second target to a near-perfect score; after the fix the target showed no real signal, so no prediction is offered.</li>
+          <li><a href="https://employee-attrition-prediction-sybersage.streamlit.app/" target="_blank">🔗 Live App</a> · <a href="https://github.com/SyberSage/-Employee_Attrition_Prediction" target="_blank">GitHub</a></li>
+        </article>
+
+        <article class="project card fade-in-elem">
+          <div class="proj-thumb-wrap">
+            <img src="pics/disease.png" alt="Multi-Disease Prediction System" class="proj-img">
+          </div>
+          <h4>Multi-Disease Prediction System</h4>
+          <li>Built and compared classification models (Logistic Regression, Random Forest, XGBoost) to predict Parkinson's, chronic kidney, and liver disease from clinical data.</li>
+          <li>Combined three independent, disease-specific pipelines into a single Streamlit application.</li>
+          <li><a href="https://multi-disease-prediction-sybersage.streamlit.app/" target="_blank">🔗 Live App</a> · <a href="https://github.com/SyberSage/Multi-Disease_Prediction" target="_blank">GitHub</a></li>
+        </article>
+
+        <article class="project card fade-in-elem">
+          <div class="proj-thumb-wrap">
+            <img src="pics/sentiment.png" alt="ChatGPT Reviews Sentiment Analysis" class="proj-img">
+          </div>
+          <h4>ChatGPT Reviews Sentiment Analysis</h4>
+          <li>NLP pipeline (NLTK preprocessing, TF-IDF) classifying app reviews as positive, neutral, or negative, comparing classical ML (Naive Bayes, Logistic Regression, SVM) against a TensorFlow/Keras LSTM.</li>
+          <li>Used a leakage-safe train/test split at the unique-text level and documented the dataset's real limitations rather than overstating results.</li>
+          <li><a href="https://reviews-sentiment-analysis-sybersage.streamlit.app/" target="_blank">🔗 Live App</a> · <a href="https://github.com/SyberSage/Reviews_Sentiment_Analysis" target="_blank">GitHub</a></li>
+        </article>
+
+        <article class="project card fade-in-elem">
+          <div class="proj-thumb-wrap">
+            <img src="pics/policy.png" alt="Public Policy Insight and Impact Analyzer" class="proj-img">
+          </div>
+          <h4>Public Policy Insight &amp; Impact Analyzer (AI Policy Analyzer)</h4>
+          <li>NLP and LLM web app that turns long government bills (PDF, web link or pasted text) into plain-language summaries, industry impact reports, timelines, and short, medium and long-term impact assessments.</li>
+          <li>Combines rule-based legal NLP (section splitting, clause-type classification, Act and date extraction), TF-IDF/NMF topic modelling and Google Gemini analysis; LLM output is validated against Pydantic schemas.</li>
+          <li>Builds knowledge and section-dependency graphs (NetworkX, Graphviz) and a downloadable Markdown report in a Streamlit dashboard.</li>
+          <li><a href="https://ppiia-sybersage.streamlit.app/" target="_blank">🔗 Live App</a> · <a href="https://github.com/SyberSage/Public-Policy-Insight-Impact-Analyzer-PPIIA" target="_blank">GitHub</a></li>
+        </article>
+
+        <article class="project card fade-in-elem">
+          <div class="proj-thumb-wrap">
             <img src="pics/helmet/IMG_20220430_014720.jpg" alt="Smart Helmet" class="proj-img">
           </div>
           <h4>Smart Helmet</h4>
@@ -145,46 +207,6 @@
           <h4>Robotic Arm, UAV & Mobile Robot Operation</h4>
           <li>Operated and tested a robotic arm, a UAV, and mobile robot platforms as part of undergraduate robotics coursework.</li>
           <li>Used ROS and Gazebo for simulation, control, and validation of robot behavior prior to hardware testing.</li>
-        </article>
-
-        <article class="project card fade-in-elem">
-          <div class="proj-thumb-wrap">
-            <img src="pics/disease.png" alt="Multi-Disease Prediction System" class="proj-img">
-          </div>
-          <h4>Multi-Disease Prediction System</h4>
-          <li>Built and compared classification models (Logistic Regression, Random Forest, XGBoost) to predict Parkinson's, chronic kidney, and liver disease from clinical data.</li>
-          <li>Combined three independent, disease-specific pipelines into a single Streamlit application.</li>
-          <li><a href="https://multi-disease-prediction-sybersage.streamlit.app/" target="_blank">🔗 Live App</a> · <a href="https://github.com/SyberSage/Multi-Disease_Prediction" target="_blank">GitHub</a></li>
-        </article>
-
-        <article class="project card fade-in-elem">
-          <div class="proj-thumb-wrap">
-            <img src="pics/attrition.png" alt="Employee Attrition Prediction" class="proj-img">
-          </div>
-          <h4>Employee Attrition Prediction</h4>
-          <li>Compared four classifiers on the IBM HR Analytics dataset; selected Logistic Regression for its strongest recall and AUC on the minority class.</li>
-          <li>Identified and removed a data-leakage feature that was artificially inflating a second prediction target to a near-perfect score.</li>
-          <li><a href="https://employee-attrition-prediction-sybersage.streamlit.app/" target="_blank">🔗 Live App</a> · <a href="https://github.com/SyberSage/-Employee_Attrition_Prediction" target="_blank">GitHub</a></li>
-        </article>
-
-        <article class="project card fade-in-elem">
-          <div class="proj-thumb-wrap">
-            <img src="pics/police.png" alt="Police Traffic Stop Analytics" class="proj-img">
-          </div>
-          <h4>Police Traffic Stop Analytics</h4>
-          <li>Interactive dashboard over a MySQL-backed traffic-stop dataset, covering violation trends, demographics, and search rates.</li>
-          <li>Runs live SQL queries for deeper analysis — top vehicles in DUI stops, arrest rate by age group, high-risk violation patterns.</li>
-          <li><a href="https://police-checkpost-logs-sybersage.streamlit.app/" target="_blank">🔗 Live App</a> · <a href="https://github.com/SyberSage/police_checkpost_logs" target="_blank">GitHub</a></li>
-        </article>
-
-        <article class="project card fade-in-elem">
-          <div class="proj-thumb-wrap">
-            <img src="pics/sentiment.png" alt="ChatGPT Reviews Sentiment Analysis" class="proj-img">
-          </div>
-          <h4>ChatGPT Reviews Sentiment Analysis</h4>
-          <li>NLP pipeline classifying app reviews as positive, neutral, or negative, comparing classical ML (Naive Bayes, Logistic Regression, SVM) against an LSTM model on TF-IDF text features.</li>
-          <li>Used a leakage-safe train/test split at the unique-text level and documented the dataset's real limitations rather than overstating results.</li>
-          <li><a href="https://reviews-sentiment-analysis-sybersage.streamlit.app/" target="_blank">🔗 Live App</a> · <a href="https://github.com/SyberSage/Reviews_Sentiment_Analysis" target="_blank">GitHub</a></li>
         </article>
 
         <article class="project card fade-in-elem">
@@ -236,20 +258,79 @@
 
       <div class="skills-grid">
         <div class="skill-card card fade-in-elem">
-          <h4>Robotics & Control Systems</h4>
+          <h4>Data Analysis &amp; Visualization</h4>
           <ul class="skill-list">
-            <li>Mechatronics & Robotics</li>
-            <li>PID & Feedback Control</li>
-            <li>System Dynamics & Kinematics</li>
-            <li>Embedded Systems & Microcontrollers (Arduino, Raspberry Pi)</li>
-            <li>Sensor Integration & Telemetry</li>
-            <li>Electrical Machines & Actuators</li>
-            <li>Power Electronics & Drives</li>
+            <li>Python (Pandas, NumPy)</li>
+            <li>SQL &amp; MySQL (joins, CTEs, window functions, indexing)</li>
+            <li>Exploratory Data Analysis</li>
+            <li>Data Cleaning &amp; Preprocessing</li>
+            <li>Statistical Analysis &amp; Hypothesis Testing</li>
+            <li>Power BI</li>
+            <li>Plotly, Matplotlib, Seaborn</li>
+            <li>Jupyter</li>
           </ul>
         </div>
 
         <div class="skill-card card fade-in-elem">
-          <h4>Robotics Software & Simulation</h4>
+          <h4>Machine Learning &amp; Deep Learning</h4>
+          <ul class="skill-list">
+            <li>Scikit-learn (pipelines, classification, regression)</li>
+            <li>XGBoost, Random Forest, Logistic Regression</li>
+            <li>Neural Networks (LSTM with TensorFlow/Keras, PyTorch)</li>
+            <li>Feature Engineering</li>
+            <li>Model Evaluation (cross-validation, AUC-ROC / recall / F1 on imbalanced data, data-leakage detection)</li>
+          </ul>
+        </div>
+
+        <div class="skill-card card fade-in-elem">
+          <h4>NLP, LLMs &amp; AI Applications</h4>
+          <ul class="skill-list">
+            <li>NLTK, TF-IDF, NMF topic modelling, VADER sentiment</li>
+            <li>LLM integration (Google Gemini API, OpenAI SDK)</li>
+            <li>Structured JSON output with Pydantic validation</li>
+            <li>Map-reduce summarization of long documents</li>
+            <li>Knowledge graphs (NetworkX, Graphviz)</li>
+          </ul>
+        </div>
+
+        <div class="skill-card card fade-in-elem">
+          <h4>Deployment &amp; Tools</h4>
+          <ul class="skill-list">
+            <li>Streamlit (Community Cloud)</li>
+            <li>Git / GitHub</li>
+            <li>joblib model packaging</li>
+            <li>MySQL / TiDB</li>
+            <li>VS Code</li>
+            <li>SAP ERP</li>
+            <li>AutoCAD / SolidWorks</li>
+            <li>C/C++, Java, HTML/CSS</li>
+          </ul>
+        </div>
+
+        <div class="skill-card card fade-in-elem">
+          <h4>Also Studied</h4>
+          <ul class="skill-list">
+            <li>Computer Vision (CNNs)</li>
+            <li>AWS</li>
+            <li>Langflow</li>
+          </ul>
+        </div>
+
+        <div class="skill-card card fade-in-elem">
+          <h4>Robotics &amp; Control Systems</h4>
+          <ul class="skill-list">
+            <li>Mechatronics &amp; Robotics</li>
+            <li>PID &amp; Feedback Control</li>
+            <li>System Dynamics &amp; Kinematics</li>
+            <li>Embedded Systems &amp; Microcontrollers (Arduino, Raspberry Pi)</li>
+            <li>Sensor Integration &amp; Telemetry</li>
+            <li>Electrical Machines &amp; Actuators</li>
+            <li>Power Electronics &amp; Drives</li>
+          </ul>
+        </div>
+
+        <div class="skill-card card fade-in-elem">
+          <h4>Robotics Software &amp; Simulation</h4>
           <ul class="skill-list">
             <li>ROS</li>
             <li>Gazebo</li>
@@ -259,34 +340,10 @@
         </div>
 
         <div class="skill-card card fade-in-elem">
-          <h4>AI / Machine Learning & Data Science</h4>
-          <ul class="skill-list">
-            <li>Python (Pandas, NumPy, Scikit-learn, PyTorch, Keras)</li>
-            <li>Machine Learning & Deep Learning (classification, regression, neural networks)</li>
-            <li>Statistical Analysis & Hypothesis Testing</li>
-            <li>Model Evaluation (cross-validation, data-leakage detection)</li>
-            <li>Streamlit Deployment</li>
-            <li>SQL</li>
-            <li>Power BI</li>
-          </ul>
-        </div>
-
-        <div class="skill-card card fade-in-elem">
-          <h4>Software & Tools</h4>
-          <ul class="skill-list">
-            <li>AutoCAD / SolidWorks</li>
-            <li>Git / GitHub</li>
-            <li>MySQL / TiDB</li>
-            <li>SAP ERP</li>
-            <li>C/C++, Java, HTML/CSS</li>
-          </ul>
-        </div>
-
-        <div class="skill-card card fade-in-elem">
           <h4>Soft Skills</h4>
           <ul class="skill-list">
-            <li>Problem Solving & Critical Thinking</li>
-            <li>Project Planning & Execution</li>
+            <li>Problem Solving &amp; Critical Thinking</li>
+            <li>Project Planning &amp; Execution</li>
             <li>Team Collaboration</li>
             <li>Technical Documentation</li>
           </ul>
